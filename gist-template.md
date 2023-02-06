@@ -1,4 +1,4 @@
-# Title (replace with your title)
+# Regex: Matching an Email  /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 Introductory paragraph (replace this with your text)
 
