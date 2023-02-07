@@ -40,9 +40,7 @@ Quantifiers are used to specify a repeating pattern or sequence. Usually quantif
 
  /^('[a-z0-9_\.-]'+)@('[\da-z\.-]'+)\.('[a-z\.]'{2,6})$/
 
-
-
-### Flags
+Character classes are components without our regex that tells us what type of chracters to expect. In our example our character classes are confined within brackets '[]'. For regex we have 3 character classes '[a-z0-9_\.-]', '[\da-z\.-]', and '[a-z\.]'. To further explation i'll breakdown the first character classes. The 'a-z' searches for letters 'a-z', '0-9' searches for numbers '0-9', and the string can include special characters '_/.-'.
 
 ### Grouping and Capturing
 
