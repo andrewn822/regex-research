@@ -28,11 +28,19 @@ Regex for short or regular expression is way to validate certain strings through
 
 /'^'([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})'$'/
 
+Anchors are to match certain characters typically in a certain position. In this instance the anchors included are the '^' symbol and the '$' symbol. The purpose of '^' is to match the first character in the string for example the string can include anything in the '[a-z0-9_\.-]' part of the code. The '$' is to match the character at the end of a string. Which allows the email to include any of the characters mentioned aboved but at the end of the string. 
+
 ### Quantifiers
 
-### OR Operator
+ /^([a-z0-9_\.-]'+')@([\da-z\.-]'+')\.([a-z\.]'{2,6}')$/
+
+Quantifiers are used to specify a repeating pattern or sequence. Usually quantifers goes after the pattern thats repeated and says how many times to repeat that pattern. In our case the quantifers included are '+, and {2,6}'. Having '+' means the string must include any of the characters '[a-z0-9_\.-]' 1 or more times. Then the '{2,6}' represents the length of the string. The length of the string after the '.' must be at least 2 characters and less than 6 characters.
 
 ### Character Classes
+
+ /^('[a-z0-9_\.-]'+)@('[\da-z\.-]'+)\.('[a-z\.]'{2,6})$/
+
+
 
 ### Flags
 
